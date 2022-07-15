@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        1
+        let name = "Tadas";
+        let surname = "Karpavičius";
+        birth = 1999;
+        let currentdate = 2022;
+        let result = currentdate - birth;
+        console.log(result);
+        console.log("Aš esu" + "" + name + "" + surname + "man yra" + "" + result + "" + "metai(ų)");
+    </script>
+
+
+
+    <script>
+        2
+        let number1 = Math.round(Math.random() * 4);
+        let number2 = Math.round(Math.random() * 4);
+        if (number1 != 0 && number2 != 0) {
+            if (number1 < number2) {
+                console.log(Math.round(number2 / number1));
+            } else {
+                console.log(Math.round(number1 / number2));
+            }
+        } else {
+            console.log("Nesvarbus skaičius");
+
+        }   
+    </script>
+
+
+    <script>
+        3
+        let number4 = Math.round(Math.random() * 25);
+        let number5 = Math.round(Math.random() * 25);
+        let number6 = Math.round(Math.random() * 25);
+        if (number4 <= number5 && number5 < number6) {
+            console.log(number6);
+        } else if (number4 <= number6 && number6 < number5) {
+            console.log(number5);
+        } else if (number5 <= number4 && number4 < number6) {
+            console.log(number6);
+        } else if (number5 <= number6 && number6 < number4) {
+            console.log(number4);
+        } else if (number6 <= number4 && number4 < number5) {
+            console.log(number5);
+        } else if (number6 <= number5 && number5 < number4) {
+            console.log(number4);
+        } 
+    </script>
+    <script>
+        4
+        let a = Math.round(Math.random() * 10) + 1;
+        let b = Math.round(Math.random() * 10) + 1;
+        let c = Math.round(Math.random() * 10) + 1;
+        if ((a + b > c) && (a + c > b) && (b + c > a)) {
+            console.log("Trikampis");
+        } else {
+            console.log("Nėra trikampio");
+        }
+
+
+
+
+    </script>
+
+    <script>
+
+        5
+
+        let random1 = Math.round(Math.random() * 2);
+        let random2 = Math.round(Math.random() * 2);
+        let random3 = Math.round(Math.random() * 2);
+        let random4 = Math.round(Math.random() * 2);
+        console.log(random1);
+        console.log(random2);
+        console.log(random3);
+        console.log(random4);
+        let count = 0;
+        if (random1 == 0) {
+            count++;
+        }
+        if (random2 == 0) {
+            count++;
+        }
+        if (random3 == 0) {
+            count++;
+        }
+        if (random4 == 0) {
+            count++;
+        }
+        console.log(count);
+        if (count == 0) {
+            console.log("0");
+        } else if (count == 1) {
+            console.log("1");
+        } else if (count == 2) {
+            console.log("2");
+        } else if (count == 3) {
+            console.log("3");
+        }
+        
+        </script>
+
+
+
+
+</body>
+
+</html>
