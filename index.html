@@ -10,7 +10,7 @@
 
 <body>
 
-    <script>
+    <!-- <script>
         1
         let name = "Tadas";
         let surname = "Karpavičius";
@@ -19,11 +19,11 @@
         let result = currentdate - birth;
         console.log(result);
         console.log("Aš esu" + "" + name + "" + surname + "man yra" + "" + result + "" + "metai(ų)");
-    </script>
+    </script> -->
 
 
 
-    <script>
+    <!-- <script>
         2
         let number1 = Math.round(Math.random() * 4);
         let number2 = Math.round(Math.random() * 4);
@@ -37,10 +37,10 @@
             console.log("Nesvarbus skaičius");
 
         }   
-    </script>
+    </script> -->
 
 
-    <script>
+    <!-- <script>
         3
         let number4 = Math.round(Math.random() * 25);
         let number5 = Math.round(Math.random() * 25);
@@ -58,8 +58,8 @@
         } else if (number6 <= number5 && number5 < number4) {
             console.log(number4);
         } 
-    </script>
-    <script>
+    </script> -->
+    <!-- <script>
         4
         let a = Math.round(Math.random() * 10) + 1;
         let b = Math.round(Math.random() * 10) + 1;
@@ -73,9 +73,9 @@
 
 
 
-    </script>
+    </script> -->
 
-    <script>
+    <!-- <script>
 
         5
 
@@ -110,8 +110,98 @@
         } else if (count == 3) {
             console.log("3");
         }
-        
-        </script>
+
+    </script> -->
+    <!-- <script>
+        6
+
+        let uno = Math.round(Math.random() * 20) - 10;
+        let dos = Math.round(Math.random() * 20) - 10;
+        let tres = Math.round(Math.random() * 20) - 10;
+        if (uno < 0) {
+            console.log([uno]);
+        } else if (uno == 0) {
+            console.log("(" + uno + ")");
+        } else if (uno > 0) {
+            console.log("{" + uno + "}");
+        }
+
+        if (dos < 0) {
+            console.log([dos]);
+        } else if (dos == 0) {
+            console.log("(" + dos + ")");
+        } else if (dos > 0) {
+            console.log("{" + dos + "}");
+        }
+
+        if (tres < 0) {
+            console.log([tres]);
+        } else if (tres == 0) {
+            console.log("(" + tres + ")");
+        } else if (tres > 0) {
+            console.log("{" + tres + "}");
+        }
+    </script> -->
+
+    <!-- <script>
+        7
+        let vnt = Math.round(Math.random() * 3000) + 5;
+        let d1 = Math.round(vnt - (vnt * 0.3));
+        let d2 = Math.round(vnt - (vnt * 0.4));
+        if (vnt > 1000) {
+            console.log(vnt + " " + "Žvakės=" + " " + d1 + "€");
+        } else if (vnt > 2000) {
+            console.log(vnt + " " + "Žvakės=" + " " + d2 + "€");
+        } else {
+            console.log(vnt + " " + "Žvakės=" + " " + vnt + "€");
+        }
+    </script> -->
+    <!-- <script>
+        8
+        let mid1 = Math.round(Math.random() * 100);
+        let mid2 = Math.round(Math.random() * 100);
+        let mid3 = Math.round(Math.random() * 100);
+        let vid = arr => Math.round(arr.reduce((p, c) => p + c, 0) / arr.length);
+        let pirmvid = vid([mid1, mid2]);
+        let antravid = vid([mid3, mid2]);
+        if (pirmvid > 10 && pirmvid < 90) {
+            console.log(pirmvid);
+        } else {
+            console.log("Neteisingas skaičius");
+        }
+        if (antravid > 10 && antravid < 90) {
+            console.log(antravid);
+        } else {
+            console.log("Neteisingas skaičius");
+        }
+    </script> -->
+    <!-- <script>
+        9
+        let sec = Math.round(Math.random() * 60);
+        let min = Math.round(Math.random() * 60);
+        let val = Math.round(Math.random() * 24);
+        let extra = Math.round(Math.random() * 300);
+        let plus = sec + extra
+        // val = 60 * min;
+        // min = 60 * sec;
+        console.log(val + " :" + min + ":" + sec);
+
+        // console.log(plus);
+        // console.log(extra);
+        let com = ~~(plus / 60);
+        // console.log(com);
+        // console.log(plus - (com * 60));
+        if (plus >= 60) {
+            min = min + com;
+            sec = (plus - (com * 60));
+        }
+        if (min >= 60) {
+            val = val + 1;
+            min = min - 60;
+        }
+        console.log((val + " :" + min + " :" + sec)); -->
+    </script>
+    
 
 
 
