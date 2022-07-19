@@ -447,7 +447,7 @@
         // }
 
         // 3
-        // let h = 0;
+        
         let s = 0;
         while (true) {
             let coin = Math.round(Math.random());
@@ -459,7 +459,7 @@
                 }
             } else {
                 console.log("H");
-                // h++;
+                
                 s = 0;
             }
         } -->
@@ -468,10 +468,55 @@
 
 
 
+    <!-- <script>
+        // Kazys ir Petras žaidžiai šaškėm. Petras surenka taškų kiekį nuo 10 iki 20, Kazys surenka taškų kiekį nuo 5 iki 25. Vienoje eilutėje išvesti žaidėjų vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”. Taškų kiekį generuokite funkcija ​Math.random()​. Žaidimą laimi tas, kas greičiau surenka 222 taškus. Partijas kartoti tol, kol kažkuris žaidėjas pirmas surenka 222 arba daugiau taškų.
+        let kazys = 0;
+        let petras = 0;
+        while (true) {
+            kazys += Math.round(Math.random() * (20) + 10);
+            petras += Math.round(Math.random() * (25) + 5);
+
+            if (kazys >= 222 || petras >= 222) {
+                break;
+            }
+        }
+        if (kazys > petras) {
+            console.log(" partiją laimėjo Kazys" + " " + kazys + " " + "taškų");
+        } else {
+            console.log(" partiją laimėjo Petras" + " " + petras + " " + "taškų");
+        }
+
+
+    </script> -->
     <script>
 
-    </script>
+        function diamond(size) {
+            let col = size * 2 - 1;
+            for (let i = 1; i <= size; i++) {
+                let s = "";
+                for (let j = 1; j <= col; j++) {
+                    if (j >= size + 1 - i && j <= size - 1 + i) {
+                        s += "*";
+                    } else {
+                        s += " ";
+                    }
+                }
+                console.log(s);
+            }
+            for (let i = size - 1; i >= 1; i--) {
+                let s = "";
+                for (let j = 1; j <= col; j++) {
+                    if (j >= size + 1 - i && j <= size - 1 + i) {
+                        s += "*";
+                    } else {
+                        s += " ";
+                    }
+                }
+                console.log(s);
+            }
+        } console.log((diamond(50)));
 
+    </script>
 
 
 
