@@ -22,9 +22,10 @@
     </script> -->
 
 
-
-    <!-- <script>
+    <!-- 
+    <script>
         2
+     
         let number1 = Math.round(Math.random() * 4);
         let number2 = Math.round(Math.random() * 4);
         if (number1 != 0 && number2 != 0) {
@@ -59,6 +60,7 @@
             console.log(number4);
         } 
     </script> -->
+
     <!-- <script>
         4
         let a = Math.round(Math.random() * 10) + 1;
@@ -83,10 +85,10 @@
         let random2 = Math.round(Math.random() * 2);
         let random3 = Math.round(Math.random() * 2);
         let random4 = Math.round(Math.random() * 2);
-        console.log(random1);
-        console.log(random2);
-        console.log(random3);
-        console.log(random4);
+        // console.log(random1);
+        // console.log(random2);
+        // console.log(random3);
+        // console.log(random4);
         let count = 0;
         if (random1 == 0) {
             count++;
@@ -101,15 +103,9 @@
             count++;
         }
         console.log(count);
-        if (count == 0) {
-            console.log("0");
-        } else if (count == 1) {
-            console.log("1");
-        } else if (count == 2) {
-            console.log("2");
-        } else if (count == 3) {
-            console.log("3");
-        }
+
+        count = 0;
+
 
     </script> -->
     <!-- <script>
@@ -199,9 +195,288 @@
             val = val + 1;
             min = min - 60;
         }
-        console.log((val + " :" + min + " :" + sec)); -->
+        console.log((val + " :" + min + " :" + sec));
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- antras labas  -->
+    <!-- <script>
+        naujo pirmas
+        let ak1 = "Džonas Depas"
+        let ak2 = "Kevinas Hartas"
+        if (ak1.length > ak2.length) {
+            console.log(ak1 + ak2);
+        } else if (ak1.length < ak2.length) {
+            console.log(ak2 + "  " + ak1);
+        }
+    </script> -->
+
+    <!-- <script>
+        2
+        let akfav = "DŽONAS depas";
+        let akafav = "KEVINAS hartas";
+        console.log(akfav + " " + akafav);
+
+    </script> -->
+
+    <!-- <script>
+        3
+        let ak1 = ["Džonas", "Depas"];
+        let ak2 = ["Kevinas", "Hartas"];
+        let ak3 = (ak1[0].charAt(0) + ak1[1][0]);
+        console.log(ak3);
+    </script> -->
+
+
+    <!-- <script>
+        // 4
+        //  Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+        let ak1 = "Džonas Depas";
+        let ak2 = "Kevinas Hartas";
+        // ak 3 take last 3 letters of ak1 and ak2 both words
+        let ak3 = (ak1.slice(-3)) + (ak2.slice(-3));
+        console.log(ak3);
+    </script> -->
+
+    <!-- <script>
+           5-6:
+        //         Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+        // Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+        // let ak1 = "An American in Paris";
+        // let ak2 = ak1.replace(/a/gi, "*");
+        // console.log(ak2);
+
+
+        // let ak1 = "An American in Paris";
+        // let ak2 = ak1.replace(/[aeiou]/gi, "");
+        // console.log(ak2);
+
+
+        // let ak1 = "An American in Paris";
+        // let ak2 = ak1.replace(/a/gi, "*");
+        // console.log(ak2);
+    </script>  -->
+
+
+
+    <!-- <script>
+        7
+        let txt = "Star Wars: Episode " + " ".repeat(Math.ceil(Math.random() * 10)) + (Math.ceil(Math.random() * 7) + 1) + " - A New Hope";
+        console.log(txt);
+        let txt2 = txt.replace(/\D/g, "");
+        console.log(txt2[txt2.length - 1]);
+    </script> -->
+
+    <!-- <script> -->
+    <!-- 8 // 8Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” yra žodžių trumpesnių arba lygių nei 5 raidės. Pakartokite kodą su stringu “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
+        // let txt = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+
+        // let txt2 = txt.replace(/\D/g, "");
+        // let txt3 = txt2.length;
+        // let txt4 = txt.match(/\b\w{5,}\b/g);
+        // console.log(txt4.length +1);
+
+        console.log(".....................................................");
+
+        let txt = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+        // how much words are shorter than 5 letters
+        let txt2 = txt.replace(/\D/g, "");
+        let txt3 = txt2.length;
+        let txt4 = txt.match(/\b\w{5,}\b/g);
+        console.log(txt4.length + 1); -->
+
+
+
+
+
+    <!-- </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Trečias lapas -->
+
+
+    <!-- <script> 
+         // Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi būti atspausdinti skliausteliuose” [ ] 
+
+        //counteris kuriamas čia kiek yra didesnių už 150 ( 0 reiksme)
+        let counter = 0;
+        for (let i = 0; i < 300; i++) {
+            let ran = Math.round(Math.random() * 300);
+            if (ran > 150) {
+                counter++; }
+                console.log(ran);
+            if (ran > 275) {
+                console.log("[ " + ran + " ]");
+            }else if (ran < 275) {
+                console.log(ran);   
+            }      
+        }
+        console.log(counter + " skaičių daugiau už 150"); -->
+
+
+
+    <!-- </script> -->
+
+    <!-- <script>
+        // 2 uzt 
+        // Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti. 
+
+    //     const num1 = 1;
+    //     const num2 = 3000;
+    //     let output = [];
+    //     let text = "";
+
+    //     for (let i = num1; i <= num2; i++) {
+    //         if (i % 77 === 0) {
+    //             // output.push(i);
+    //             text += i + ", ";
+    //         }
+    //     }
+    //     // console.log(output);
+
+    //     console.log(text);
+    //     console.log("-----------------------------------------------------");
+    //     text = "";
+    //     for (let i = 77; i < 3000; i += 77) {
+    //         text += i + ", ";
+    //     }
+    //     console.log(text.substring(0, text.length - 2));
+    // </script>  -->
+
+
+    <!-- <script> 
+        // 3 Nupieškite kvadratą iš “*”, kurio kraštines sudaro 100 “*”
+        // let kvadr = "";
+        // for (let i = 0; i <= 10000; i++) {
+        //     kvadr += "*";
+        //     if (i % 100 == 0) {
+        //         console.log(kvadr);
+        //         kvadr = "";
+        //     }
+        // }
+        console.log("-----------------------------");
+
+
+
+        // for (let i = 0; i < 20; i++) {
+        //     kvadr = "";
+        //     for (let a = 0; a < 20; a++) {
+        //         if (i == a) {
+        //             kvadr += "0";
+        //         } else {
+        //             kvadr += "*";
+        //         }
+        //     }
+        //     console.log( kvadr);
+        // }
+        for (let i = 0; i < 100; i++) {
+            kvadr = "";
+            for (let a = 1; a < 100; a++) {
+                if (i == a) {
+                    kvadr += "0";
+                }
+
+                if (a == 100 - i) {
+                    kvadr += ("0");
+                } else {
+                    kvadr += "*";
+                }
+            }
+            console.log(kvadr);
+        }
+
+        // console.log(kvadr);
+
+
+    </script> -->
+
+    <!-- <script> -->
+    <!-- // (Metam monetą. Monetos kritimo rezultatą imituojam Math.random() funkcija, kur 0 yra herbas, o 1 - skaičius. Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje: “S” jeigu iškrito skaičius ir “H” jeigu herbas. Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+        // Iškritus herbui;
+        // Tris kartus iškritus herbui;
+        // Tris kartus iš eilės iškritus herbui;)
+        // while (true) {
+        //     let coin = Math.round(Math.random());
+        //     if (coin == 0) {
+        //         console.log("S");
+        //     } else {
+        //         console.log("H"); {
+        //             break;
+        //         }
+        //     }
+        // }
+        // 2
+        // let h = 0;
+        // while (true) {
+        //     let coin = Math.round(Math.random());
+        //     if (coin == 0) {
+        //         console.log("S");
+        //     } else {
+        //         console.log("H");
+        //         h++;
+        //         if (h == 3) {
+        //             break;
+        //         }
+        //     }
+        // }
+
+        // 3
+        // let h = 0;
+        let s = 0;
+        while (true) {
+            let coin = Math.round(Math.random());
+            if (coin == 0) {
+                console.log("S");
+                s++;
+                if (s == 3) {
+                    break;
+                }
+            } else {
+                console.log("H");
+                // h++;
+                s = 0;
+            }
+        } -->
+
+
+
+
+
+    <script>
+
     </script>
-    
+
+
+
+
+
+
 
 
 
