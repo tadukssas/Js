@@ -488,7 +488,7 @@
 
 
     </script> -->
-    <script>
+    <!-- <script>
 
         function diamond(size) {
             let col = size * 2 - 1;
@@ -498,7 +498,7 @@
                     if (j >= size + 1 - i && j <= size - 1 + i) {
                         s += "*";
                     } else {
-                        s += " ";
+                        s += "0";
                     }
                 }
                 console.log(s);
@@ -516,7 +516,86 @@
             }
         } console.log((diamond(50)));
 
-    </script>
+    </script> -->
+
+    <!-- <script>
+        // Sumodeliuokite vinies kalimą. Įkalimo gylį sumodeliuokite pasinaudodami Math.random() funkcija. Vinies ilgis 8.5cm (pilnai sulenda į lentą).
+        // “Įkalkite” 5 vinis mažais smūgiais. Vienas smūgis vinį įkala 5-20 mm. Suskaičiuokite kiek reikia smūgių 85mm, 5
+
+        // A)
+        // let vinys = 5;
+        // let vinioIlg = (85 * vinys)
+        // let smugisIlgis = Math.round(Math.random() * (20) + 5);
+        // let smugisKiekis = Math.round(vinioIlg / smugisIlgis);
+        // console.log(smugisKiekis);
+
+        // B)Įkalkite” 5 vinis dideliais smūgiais. Vienas smūgis vinį įkala 20-30 mm, bet yra 50% tikimybė (pasinaudokite Math.random() funkcija tikimybei sumodeliuoti), kad smūgis nepataikys į vinį. Suskaičiuokite kiek reikia smūgių.
+
+        let vinys = 5;
+        let kartai = 0;
+        let vinioIlg = (85);
+        let kiekIkale = 0;
+        for (let i = 0; i < 5; i++) {
+            while (true) {
+                let tikimybe = Math.round(Math.random());
+                if (tikimybe == 1) {
+                    let smugisIlgis = Math.round(Math.random() * (30) + 20);
+                    kartai++;
+                    kiekIkale += smugisIlgis;
+                }
+                if (kiekIkale >= vinioIlg) {
+                    break;
+                }
+            }
+
+            console.log(kartai);
+        }
+    </script> -->
+
+    <!-- <script>
+        // 9 Sugeneruokite stringą, kurį sudarytų 50 atsitiktinių skaičių nuo 1 iki 200, atskirtų tarpais. Skaičiai turi būti unikalūs (t.y. nesikartoti). Sugeneruokite antrą stringą, pasinaudodami pirmu, palikdami jame tik pirminius skaičius (t.y tokius, kurie dalinasi be liekanos tik iš 1 ir patys savęs). Skaičius stringe sudėliokite didėjimo tvarka, nuo mažiausio iki didžiausio. (reikės split() funkcijos ir masyvų.)
+        // generate 50 random numbers from 1 to 200, separated by spaces. Numbers must be unique.
+        // generate another string, using only even numbers from the first string, leaving the rest as is.
+        // sort the numbers in the string in ascending order, from the smallest to the biggest. (requires split() and arrays.)
+
+        let s = "";
+        for (let i = 1; i <= 50; i++) {
+            s += Math.round(Math.random() * (200) + 1) + " ";
+
+        }
+        console.log(s);
+        s.split(" ");
+
+
+        // s2 equals to s, but without the odd numbers.
+        let s2 = "";
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] % 2 == 0) {
+                s2 += s[i];
+            }
+        }
+        console.log(s2);
+
+
+        // let s2 = "";
+        // while (skaicius.length > 0) {
+        //     let skaicius = s.split(" ");
+        //     if (skaicius % 2 == 0) {
+        //         s2 += + " ";
+        //     }
+        //     console.log(s2);
+        // }
+
+        // }
+        // for (let i = 1; i <= 50; i++) {
+        //     if (i % 2 == 0) {
+        //         s2 += i + " ";
+        //     }
+        // }
+        // console.log(s2);
+
+
+    </script> -->
 
 
 
